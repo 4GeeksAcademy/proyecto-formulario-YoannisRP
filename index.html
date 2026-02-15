@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <div class="container mt-5 mb-5">
+
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h3 class="mb3">Formulario</h3>
+                <div class="alert alert-danger" role="alert">
+                    Some fields are missing
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="mb-3">
+                            <label class="form-label">Card #</label>
+                            <input type="number" class="form-control" placeholder="xxxxxxxxxxxxxxx" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label class="form-label">CVC #</label>
+                            <input type="number" class="form-control" placeholder="000" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label class="form-label">Amount</label>
+                            <input type="number" class="form-control" placeholder="$ Amount" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">City</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label class="form-label">State</label>
+                            <select class="form-select" required>
+                                <option value="">Pick a state</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label class="form-label">Postal Code</label>
+                            <input type="number" class="form-control" placeholder="00000" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label class="form-label">We accep</label>
+
+                            <div class="d-flex gap-4 align-items-center">
+
+                                <div class="form-check d-flex align-items-center" style="font-size:10px">
+                                    <input class="form-check-input me-1" type="radio" name="cardType" id="cardVisa">
+                                    <label class="form-check-label" for="cardVisa">
+                                        <i class="fa-brands fa-cc-visa fa-2xl"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex align-items-center" style="font-size:10px">
+                                    <input class="form-check-input me-1" type="radio" name="cardType"
+                                        id="cardMastercard">
+                                    <label class="form-check-label" for="cardMastercard">
+                                        <i class="fa-brands fa-cc-mastercard fa-2xl"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex align-items-center" style="font-size:10px">
+                                    <input class="form-check-input me-1" type="radio" name="cardType" id="cardDiscover">
+                                    <label class="form-check-label" for="cardDiscover">
+                                        <i class="fa-brands fa-cc-discover fa-2xl"></i>
+                                    </label>
+                                </div>
+
+
+                                <div class="form-check d-flex align-items-center" style="font-size:10px">
+                                    <input class="form-check-input me-1" type="radio" name="cardType" id="cardAmex">
+                                    <label class="form-check-label" for="cardAmex">
+                                        <i class="fa-brands fa-cc-amex fa-2xl"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-end"> 
+                    <button type="button" class="btn btn-secondary me-2">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Send</button> 
+                </div>
+
+
+            </div>
+
+        </div><!--container-->
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
